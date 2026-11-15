@@ -72,7 +72,7 @@ def make_syntax_shebanglines() -> Syntax:
 #!/bin/bash
 #!/usr/bin/env bash
     """
-    syntax_shebanglines = Syntax(code, "python", line_numbers=True)
+    syntax_shebanglines = Syntax(code, "bash", line_numbers=True)
     return syntax_shebanglines
 
 def make_syntax_inoutput() -> Syntax:
@@ -83,7 +83,7 @@ read -p age # read -s for a silent input
 # Output
 echo "Hello World!"
     """
-    syntax_inoutput = Syntax(code, "python", line_numbers=True)
+    syntax_inoutput = Syntax(code, "bash", line_numbers=True)
     return syntax_inoutput
 
 def make_syntax_conditionals() -> Syntax:
@@ -110,7 +110,7 @@ case $COUNTRY in
         echo "unknown" ;;
 esac
     """
-    syntax_conditionals = Syntax(code, "python", line_numbers=True)
+    syntax_conditionals = Syntax(code, "bash", line_numbers=True)
     return syntax_conditionals
 
 def make_syntax_loops() -> Syntax:
@@ -126,7 +126,7 @@ until [ $count -gt 10 ]; do
   ((count++))
 done
     """
-    syntax_loops = Syntax(code, "python", line_numbers=True)
+    syntax_loops = Syntax(code, "bash", line_numbers=True)
     return syntax_loops
 
 def make_syntax_functions() -> Syntax:
@@ -138,7 +138,7 @@ greeting() {
 }
 greeting "Alisa" # Call a function
     """
-    syntax_functions = Syntax(code, "python", line_numbers=True)
+    syntax_functions = Syntax(code, "bash", line_numbers=True)
     return syntax_functions
 
 def make_syntax_variables() -> Syntax:
@@ -148,7 +148,7 @@ age=12
 echo "I liked $fav_food when I was $age
 years old!"
     """
-    syntax_variables = Syntax(code, "python", line_numbers=True)
+    syntax_variables = Syntax(code, "bash", line_numbers=True)
     return syntax_variables
 
 def make_syntax_datatypes() -> Syntax:
@@ -160,7 +160,7 @@ declare -A colors # associative array
 colors[cherry]="red"
 colors[banana]="yellow"
     """
-    syntax_datatypes = Syntax(code, "python", line_numbers=True)
+    syntax_datatypes = Syntax(code, "bash", line_numbers=True)
     return syntax_datatypes
 
 def make_syntax_errorhandling() -> Syntax:
@@ -177,7 +177,7 @@ error_handler() {
 }
 trap 'error_handler $LINENO' ERR
     """
-    syntax_errorhandling = Syntax(code, "python", line_numbers=True)
+    syntax_errorhandling = Syntax(code, "bash", line_numbers=True)
     return syntax_errorhandling
 
 def make_syntax_operators() ->  Syntax:
@@ -202,7 +202,7 @@ def make_syntax_operators() ->  Syntax:
 # -f -> Checks if file is regular file
 # -s -> Checks if a file is not empty
     """
-    syntax_operators = Syntax(code, "python", line_numbers=True)
+    syntax_operators = Syntax(code, "bash", line_numbers=True)
     return syntax_operators
 
 def make_syntax_bashcmds() -> Syntax:
@@ -214,7 +214,7 @@ cp main.py ~/Projects/main.py # copy file/directory
 mv main.py mainp.py # move or rename file/directory
 rm main.py # remove file/directory
     """
-    syntax_bashcmds = Syntax(code, "python", line_numbers=True)
+    syntax_bashcmds = Syntax(code, "bash", line_numbers=True)
     return syntax_bashcmds
 
 def start_fullscreen_bashscripting():
