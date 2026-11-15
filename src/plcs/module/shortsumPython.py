@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2026 xxsamiyaxx
+# SPDX-License-Identifier: GPL-3.0-or-later
+
 from rich.console import Console
 from rich.markdown import Markdown
 from rich.theme import Theme

@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2026 xxsamiyaxx
+# SPDX-License-Identifier: GPL-3.0-or-later
+
 # Imports
 from rich.layout import Layout
 from rich.panel import Panel

@@ -1,5 +1,4 @@
 # Used Sources for the Information of this tool
-I've used for this tool sources from the internet and official documentation. Therefore I list for you all sources I used for which section
 
 ## Sources for short summary of Python
 - https://www.coursera.org/articles/what-is-python-used-for-a-beginners-guide-to-using-python
