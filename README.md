@@ -6,3 +6,10 @@ several programming languages, more precisely you can search for the main syntax
 For this information there is also the file [included_pl.md](docs/included_pl.md), which contains
 more about the programing languages and also my ideas for features
 in the future. 
+
+## Installation
+To install the tool plcheatsheet, please make sure that you have installed python and its package manager pip or pipx.
+### Installation with pip or pipx
+
+## Used sources
+For a few information about the programming or scripting language (e.g. for the short summaries) I have used sources to find out more about the language. You can find all sources in the file [SOURCES.md](docs/SOURCES.md).
