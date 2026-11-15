@@ -25,6 +25,17 @@ with which I mean the topics
 - Output & Input
 - Data Types
 - Basic Bash Commands
-
 - Operators
 - Error handling
+
+## Content of JavaScript Cheatsheet
+- In- & Output
+- Variables
+- Operators
+- Conditionals
+- Loops
+- Strings
+- Functions
+- Classes 
+- Arrays
+- Error Handling

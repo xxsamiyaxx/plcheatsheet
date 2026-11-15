@@ -24,3 +24,4 @@ and how to hack with Python
 - for **C++**: also usage with Unreal Engine and with Aduino
 - for **C#**: also usage with Unity
 - for **Bash**: also normal usage like commands for the terminal as Cheatsheet
+- for **JS**: also how to fetch API, async JS and DOM Basics (maybe as a expanded cheatsheet)
