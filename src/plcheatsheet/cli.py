@@ -1,6 +1,7 @@
 import click
 import module.fullscreenPython as fp
 import module.fullscreenBashScripting as fb
+import module.fullscreenJS as fj
 
 @click.group(invoke_without_command=True)
 @click.pass_context
@@ -16,11 +17,16 @@ def main(ctx):
 @click.option("-f", "--fullscreen", is_flag=True, help="Displays a fullscreen and compact Cheatsheet")
 def lang(language, fullscreen):
     """Language should be the programming language for which you want to look up the syntax"""
-    if language.lower() == "python":
-        if fullscreen:
-            fp.start_fullscreen_py()
-    elif language.lower() == "bash":
-        if fullscreen:
-            fb.start_fullscreen_bashscripting()
+    match language.lower():
+        case "python" | "py":
+            if fullscreen:
+                fp.start_fullscreen_py()
+        case "javascript" | "js":
+            if fullscreen:
+                fj.start_fullscreen_js()
+        case "bash" | "bashscripting" | "bash scripting":
+            if fullscreen:
+                fb.start_fullscreen_bashscripting()
+
 
 
