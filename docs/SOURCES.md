@@ -1,5 +1,15 @@
 # Used Sources for the Information of this tool
+## Copyright and Attribution
 
+The listed websites were used as informational
+references during research.
+
+The summaries were independently written
+and do not intentionally reproduce the
+original wording of the referenced sources.
+
+All third-party content remains subject
+to its respective copyright and licensing terms.
 ## Sources for short summary of Python
 - https://www.coursera.org/articles/what-is-python-used-for-a-beginners-guide-to-using-python
 - Inden, Michael: Python lernen - kurz & gut. Heidelberg: O'Reilly, 2023. S. 23 - 24.

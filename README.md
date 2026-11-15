@@ -54,4 +54,5 @@ Copyright (C) 2026 xxsamiyaxx
 This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
 
 ## Used sources
-For a few information about the programming or scripting language (e.g. for the short summaries) I have used sources to find out more about the language. You can find all sources in the file [SOURCES.md](docs/SOURCES.md).
+For the information of the short summaries I used sources to research and for fact-checking. You can find all sources in the file [SOURCES.md](docs/SOURCES.md).
+The short summaries are written in my own words and also independently
