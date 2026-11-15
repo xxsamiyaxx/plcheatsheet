@@ -1,0 +1,18 @@
+[project]
+name = "plcheatsheet"
+version = "0.1.0"
+description = "a CLI tool for quickly looking up programming languages"
+readme = "README.md"
+authors = [
+    { name = "xxsamiyaxx" }
+]
+requires-python = ">=3.15"
+dependencies = [
+    "typer>=0.27.3",
+]
+[project.scripts]
+plcheatsheet = "plcheatsheet:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
