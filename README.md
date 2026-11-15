@@ -28,25 +28,28 @@ more about the programing languages and also my ideas for features
 in the future. 
 
 ## Installation
-Firstly, please make sure that you have installed python 3.12 or higher, git and pipx or uv.
-To install this tool global, you can use pipx. To install plcheatsheet run the following code
+Firstly, please make sure that you have installed **python 3.12** or **higher**, **git** and **pipx** or **uv**.
+To install this tool global, you can use **pipx**. To install plcheatsheet run the following code
 ```bash
 pipx install git+https://github.com/xxsamiyaxx/plcheatsheet.git
 ```
 
-Alternatively, you can installed it with uv, running:
+**Alternatively**, you can installed it with **uv**, running:
 ```bash
 uv tool install git+https://github.com/xxsamiyaxx/plcheatsheet.git
 ```
-Now plcheatsheet should be installed and is ready to use.
+Now plcheatsheet should be **installed** and is **ready to use**.
 
 > [!NOTE]
-> Make sure that you use a terminal font which include a normal, italic and bold style, otherwise the italic style or bold style of words in the short summaries will not be showed. 
->Additionally, use a terminal font combined with Symbols Nerd Font or use a Nerd Font like JetBrainsMono Nerd Font to display the symbols correctly
+> Make sure that you use a terminal font which include a **normal**, **italic** and **bold** style, otherwise the italic style or bold style of words in the short summaries will not be showed. 
+>Additionally, use a terminal font combined with **Symbols Nerd Font** or use a **Nerd Font** like JetBrainsMono Nerd Font to display the symbols correctly
+
+## Notices
+One kind of a problem is that when you use the fullscreen cheatsheets then your terminal has to be in fullscreen mode and you should have a terminal font size of **14.5 pt** or **lower** because if your font size is bigger than 14.5 pt then it is possible that not all of this cheatsheet will be correctly displayed.
 
 ## Contributing
-Whenever you have an new idea for this project and maybe want to contribute, don't be shy to write me a message. 
-If you find bugs or something else, you also can report this in the issues!
+Whenever you have an new idea for this project and maybe want to contribute, you can write this in the discussion or
+if you find bugs or something else, you also can report this in the issues!
 
 ## License
 Copyright (C) 2026 xxsamiyaxx
