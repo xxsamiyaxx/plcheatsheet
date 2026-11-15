@@ -28,7 +28,7 @@ more about the programing languages and also my ideas for features
 in the future. 
 
 ## Installation
-Firstly, please make sure that you have installed python, git and pipx or uv.
+Firstly, please make sure that you have installed python 3.12 or higher, git and pipx or uv.
 To install this tool global, you can use pipx. To install plcheatsheet run the following code
 ```bash
 pipx install git+https://github.com/xxsamiyaxx/plcheatsheet.git
