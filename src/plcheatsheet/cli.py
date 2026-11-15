@@ -4,6 +4,7 @@ import module.fullscreenBashScripting as fb
 import module.fullscreenJS as fj
 import module.shortsumPython as sp
 import module.shortsumBash as sb
+import module.shortsumJS as sj
 
 @click.group(invoke_without_command=True)
 @click.pass_context
@@ -29,6 +30,8 @@ def lang(language, fullscreen, shortsummary):
         case "javascript" | "js":
             if fullscreen:
                 fj.start_fullscreen_js()
+            elif shortsummary:
+                sj.display_shortsummary_js()
         case "bash" | "bashscripting" | "bash scripting":
             if fullscreen:
                 fb.start_fullscreen_bashscripting()
