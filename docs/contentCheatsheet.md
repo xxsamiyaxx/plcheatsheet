@@ -24,6 +24,7 @@ with which I mean the topics
 - Conditionals
 - Output & Input
 - Data Types
-- Arrays
+- Basic Bash Commands
+
 - Operators
 - Error handling
