@@ -22,11 +22,14 @@ import plcs.module.shortsumPython as sp
 import plcs.module.shortsumBash as sb
 import plcs.module.shortsumJS as sj
 
-@click.group(invoke_without_command=True)
+CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
+
+@click.group(invoke_without_command=True, context_settings=CONTEXT_SETTINGS)
+@click.version_option(None, "-v", "--version", package_name="plcheatsheet", message="%(version)s")
 @click.pass_context
 def main(ctx):
     """plcheatsheet is a CLI tool for searching quickly, fast and effective the syntax of
-    several programming languages."""
+       several programming or scripting languages."""
     if ctx.invoked_subcommand is None:
         click.echo(ctx.get_help())
         ctx.exit()
