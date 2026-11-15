@@ -5,6 +5,8 @@ from rich.console import Console
 from datetime import datetime
 from rich.table import Table
 from rich.syntax import Syntax
+from rich.live import Live
+import time
 
 console = Console()
 
@@ -230,16 +232,25 @@ finally:
     return syntax_exceptions
 
 # Making the layout + update it with the functions + build panels
-layout = make_pylayout()
-layout["header"].update(Header())
-layout["In- & Output"].update(Panel(make_syntax_outinput(), border_style="yellow", title="In- & Output"))
-layout["Variables"].update(Panel(make_syntax_variables(), border_style="yellow", title="Variables"))
-layout["Data Structures"].update(Panel(make_syntax_datastructures(), border_style="yellow", title="Data Structures"))
-layout["Conditionals"].update(Panel(make_syntax_conditionals(), border_style="yellow", title="Conditionals"))
-layout["Classes"].update(Panel(make_syntax_classes(), border_style="yellow", title="Classes"))
-layout["Operators"].update(Panel(make_syntax_operators(), border_style="yellow", title="Operators"))
-layout["Strings"].update(Panel(make_syntax_strings(), border_style="yellow", title="Strings"))
-layout["Loops"].update(Panel(make_syntax_loops(), border_style="yellow", title="Loops"))
-layout["Imports"].update(Panel(make_syntax_imports(), border_style="yellow", title="Imports"))
-layout["Functions"].update(Panel(make_syntax_functions(), border_style="yellow", title="Functions"))
-layout["Exceptions"].update(Panel(make_syntax_exceptions(), border_style="yellow", title="Exceptions"))
+def start_fullscreen_py():
+    layout = make_pylayout()
+    layout["header"].update(Header())
+    layout["In- & Output"].update(Panel(make_syntax_outinput(), border_style="yellow", title="In- & Output"))
+    layout["Variables"].update(Panel(make_syntax_variables(), border_style="yellow", title="Variables"))
+    layout["Data Structures"].update(Panel(make_syntax_datastructures(), border_style="yellow", title="Data Structures"))
+    layout["Conditionals"].update(Panel(make_syntax_conditionals(), border_style="yellow", title="Conditionals"))
+    layout["Classes"].update(Panel(make_syntax_classes(), border_style="yellow", title="Classes"))
+    layout["Operators"].update(Panel(make_syntax_operators(), border_style="yellow", title="Operators"))
+    layout["Strings"].update(Panel(make_syntax_strings(), border_style="yellow", title="Strings"))
+    layout["Loops"].update(Panel(make_syntax_loops(), border_style="yellow", title="Loops"))
+    layout["Imports"].update(Panel(make_syntax_imports(), border_style="yellow", title="Imports"))
+    layout["Functions"].update(Panel(make_syntax_functions(), border_style="yellow", title="Functions"))
+    layout["Exceptions"].update(Panel(make_syntax_exceptions(), border_style="yellow", title="Exceptions"))
+
+    with Live(layout, screen=True, refresh_per_second=1) as live:
+        try:
+            while True:
+                time.sleep(1)
+                live.update(layout)
+        except KeyboardInterrupt:
+            pass
