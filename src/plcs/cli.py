@@ -43,7 +43,20 @@ def main(ctx):
 @click.option("-f", "--fullscreen", is_flag=True, help="Displays a fullscreen and compact Cheatsheet")
 @click.option("-s", "--shortsummary", is_flag=True, help="Displays a short summary about the language")
 def lang(language, fullscreen, shortsummary):
-    """programming or scripting language which you want to look up or for which you want to look up the syntax"""
+    """programming or scripting language which you want to look up or for which you want to look up
+
+    \b
+    Available languages & accepted spellings:
+        Python:     python, py
+        Bash:       bash, bashscripting, "bash scripting"
+        Javascript: javascript, js
+    \b
+    -> Input is case-insensitive (e.g., 'Python', 'python', or 'PYTHON' all work).
+    \b
+    Examples:
+        plcs lang py -f
+        plcs lang js --shortsummary
+    """
     error_message = "You have to give an option, type 'plcs lang --help' to see all options."
     match language.lower():
         case "python" | "py":
