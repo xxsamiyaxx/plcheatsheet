@@ -3,20 +3,20 @@ from rich.markdown import Markdown
 from rich.theme import Theme
 from pathlib import Path
 
-bash_design = Theme({
-    "markdown.h1": "bold green",
-    "markdown.h2": "bold green",
-    "markdown.strong": "bold white",
-    "markdown.code": "green",
+py_design = Theme({
+    "markdown.h1": "bold underline blue",
+    "markdown.h2": "bold yellow",
+    "markdown.strong": "italic blue",
+    "markdown.code": "yellow",
 })
 
-console = Console(theme=bash_design)
+console = Console(theme=py_design)
 
-def read_summary_bash():
+def read_summary_py():
     current_file = Path(__file__).resolve()
     src_directory = current_file.parent.parent
 
-    md_path = src_directory / "data" / "shortsumBash.md"
+    md_path = src_directory / "data" / "shortsumPython.md"
 
     if not md_path.exists():
         return f"! Error\nThe file was not found under `{md_path}`."
@@ -26,6 +26,6 @@ def read_summary_bash():
 
     return md
 
-def display_shortsummary_bash():
-    summary = read_summary_bash()
+def display_shortsummary_py():
+    summary = read_summary_py()
     console.print(summary)

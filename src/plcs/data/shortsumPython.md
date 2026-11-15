@@ -7,7 +7,7 @@
 - enables **object-oriented** and **functional** programming.
 - a **general-purpose** language
 - *package manager*: **pip**
-- file extension: .py
+- *file extension*: **.py**
 
 ## What is Python commonly used for?
 - **website** and **software development**,

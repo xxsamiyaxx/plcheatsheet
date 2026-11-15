@@ -8,7 +8,7 @@
 
 ## What is a Bash script
 - a **plain text file** which contains **commands** which will be step by step executed by the Bash shell
-- Common file extension: .sh
+- *Common file extension*: **.sh**
 
 ## Usages of Bash scripts
 - **Automation** of **repetitive** work
