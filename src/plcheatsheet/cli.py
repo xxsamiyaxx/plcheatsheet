@@ -3,6 +3,7 @@ import module.fullscreenPython as fp
 import module.fullscreenBashScripting as fb
 import module.fullscreenJS as fj
 import module.shortsumPython as sp
+import module.shortsumBash as sb
 
 @click.group(invoke_without_command=True)
 @click.pass_context
@@ -31,6 +32,8 @@ def lang(language, fullscreen, shortsummary):
         case "bash" | "bashscripting" | "bash scripting":
             if fullscreen:
                 fb.start_fullscreen_bashscripting()
+            elif shortsummary:
+                sb.display_shortsummary_bash()
         case _:
             print("""There is no information for this language. Make sure that you write the name of the language correctly and check
 in the included_pl.md or the README.md of this repository if the language you are trying to search is supported.""")
