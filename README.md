@@ -10,3 +10,4 @@ several programming languages, more precisely you can search for the main syntax
 - **C++** → its basic syntax
 - **JavaScript** → basic syntax
 - **SQL**
+- **Bash**
