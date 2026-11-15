@@ -1,7 +1,6 @@
 import click
-import time
-from rich.live import Live
 import module.fullscreenPython as fp
+import module.fullscreenBashScripting as fb
 
 @click.group(invoke_without_command=True)
 @click.pass_context
@@ -20,5 +19,8 @@ def lang(language, fullscreen):
     if language.lower() == "python":
         if fullscreen:
             fp.start_fullscreen_py()
+    elif language.lower() == "bash":
+        if fullscreen:
+            fb.start_fullscreen_bashscripting()
 
 
