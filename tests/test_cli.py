@@ -1,7 +1,10 @@
-import click
+import unittest
 
-@click.group()
-def main():
-    """plcheatsheet is a CLI tool for searching quickly, fast and effective the syntax of
-    several programming languages."""
-    pass
+
+class MyTestCase(unittest.TestCase):
+    def test_something(self):
+        self.assertEqual(True, False)  # add assertion here
+
+
+if __name__ == '__main__':
+    unittest.main()

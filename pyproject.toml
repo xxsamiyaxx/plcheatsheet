@@ -9,6 +9,8 @@ authors = [
 requires-python = ">=3.15"
 dependencies = [
     "click>=8.5.0",
+    "pytest>=9.2.0",
+    "rich>=15.0.0",
 ]
 [project.scripts]
 plcheatsheet = "plcheatsheet:main"
