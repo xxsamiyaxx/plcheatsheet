@@ -15,3 +15,15 @@ with which I mean the topics
 - class & objects
 - exceptions
 - imports
+
+## Content of Bash Scripting Cheatsheet
+- Shebang lines
+- Variables
+- Functions
+- Loops
+- Conditionals
+- Output & Input
+- Data Types
+- Arrays
+- Operators
+- Error handling

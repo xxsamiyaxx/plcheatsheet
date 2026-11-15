@@ -2,7 +2,7 @@
 
 ## In the first version:
 - Python
-- Bash
+- Bash Scripting
 - JavaScript
 
 -> contains **fullscreen cheatsheet**
@@ -23,3 +23,4 @@ for this languages
 and how to hack with Python
 - for **C++**: also usage with Unreal Engine and with Aduino
 - for **C#**: also usage with Unity
+- for **Bash**: also normal usage like commands for the terminal as Cheatsheet
