@@ -42,6 +42,11 @@ pipx install git+https://github.com/xxsamiyaxx/plcheatsheet.git
 ```bash
 uv tool install git+https://github.com/xxsamiyaxx/plcheatsheet.git
 ```
+This will install the **newest** version of plcheatsheet.\
+You can also choose a version to install, for example:
+```bash
+pipx install git+https://github.com/xxsamiyaxx/plcheatsheet.git@v0.1.0
+```
 Now plcheatsheet should be **installed** and is **ready to use**.
 
 > [!NOTE]
